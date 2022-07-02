@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+<h1 class="patients">PATIENTS</h1>
+<!--the below code is nothing but a for loop through the posts array-->
+<% posts.forEach(function(post){ %>
+  <ul>
+    <li>
+      <h3 class="patients"><%=post.title%></h3>
+      <p><%=post.content%></p>
+    </li>
+  </ul>
+<%}) %>
+<%- include("partials/footer"); -%>
